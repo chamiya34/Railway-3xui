@@ -1,6 +1,7 @@
-FROM enwaoxui/3x-ui:latest
+FROM FranzKafkaYu/x-ui:latest
 
 ENV XUI_PORT=2026
 EXPOSE 2026
 
-CMD ["/usr/local/3x-ui/3x-ui"]
+# පැනල් එක direct run කරවීම
+CMD ["/usr/local/x-ui/x-ui"]
