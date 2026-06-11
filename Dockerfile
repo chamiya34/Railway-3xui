@@ -1,5 +1,4 @@
-FROM ghcr.io/moryauty/3x-ui:latest
-
+FROM enwaoxui/3x-ui:latest
 
 ENV XUI_PORT=2026
 EXPOSE 2026
