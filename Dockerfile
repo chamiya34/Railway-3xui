@@ -1,8 +1,7 @@
-FROM ubuntu:latest
+FROM ghcr.io/moryauty/3x-ui:latest
 
-RUN apt-get update && apt-get install -y curl wget tmate
 
-CMD tmate -S /tmp/tmate.sock new-session -d && \
-    sleep 3 && \
-    tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}' && \
-    tail -f /dev/null
+ENV XUI_PORT=2026
+EXPOSE 2026
+
+CMD ["/usr/local/3x-ui/3x-ui"]
